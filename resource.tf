@@ -1,12 +1,3 @@
-provider "azurerm" {
-features {}
-}
-
-resource "azurerm_resource_group" "terra" {
-  name     = "terra"
-  location = "East US"
-}
- 
 resource "azurerm_virtual_network" "terra_vnet" {
     name                = "terra-vnet"
     address_space       = ["10.0.0.0/16"]
